@@ -1,0 +1,50 @@
+name: China KI-Briefing
+
+on:
+  schedule:
+    - cron: '0 7 * * 1,4'
+  workflow_dispatch:
+
+env:
+  PYTHONUNBUFFERED: 1
+
+jobs:
+  china-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install google-genai
+
+      - name: Run China Briefing Pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scraper.py
+
+      - name: Check for new briefing
+        id: check
+        run: |
+          if [ -f briefing.md ] && [ "$(cat briefing.md)" != "Keine neue Episode verfügbar." ]; then
+            echo "has_briefing=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_briefing=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & Push
+        if: steps.check.outputs.has_briefing == 'true'
+        run: |
+          git config user.name "China Briefing Bot"
+          git config user.email "bot@china-briefing.local"
+          git add briefing.md briefing_email.html processed.json
+          git diff --staged --quiet || git commit -m "China KI-Briefing $(date +%Y-%m-%d)"
+          git push
