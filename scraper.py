@@ -366,8 +366,53 @@ def briefing_from_audio(audio_path, episode_title, source_name, source_config):
                 max_output_tokens=MAX_OUTPUT_TOKENS,
             ),
         )
+
+        # Check finish reason
+        finish_reason = None
+        if response.candidates and len(response.candidates) > 0:
+            finish_reason = response.candidates[0].finish_reason
+            print(f"  Finish Reason: {finish_reason}")
+
         briefing_text = response.text
         print(f"  Briefing erhalten: {len(briefing_text)} Zeichen")
+
+        # Check for truncation: if text is suspiciously short or ends mid-sentence
+        if len(briefing_text) < 3000:
+            print(f"  WARNUNG: Briefing sehr kurz ({len(briefing_text)} Zeichen) – möglicherweise abgeschnitten")
+            print(f"  Letzte 100 Zeichen: ...{briefing_text[-100:]}")
+
+            # Retry once with higher token limit
+            print(f"  Versuche erneut mit erhöhtem Token-Limit...")
+            response2 = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    {
+                        "parts": [
+                            {"file_data": {"file_uri": uploaded.uri, "mime_type": uploaded.mime_type}},
+                            {"text": user_prompt + "\n\nWICHTIG: Erstelle das VOLLSTÄNDIGE Briefing mit allen Abschnitten: Executive Summary, Deep-Dive Analysen (mit 'Einordnung für Europa'), und 'Zum Drüber Nachdenken' (GENAU 2 Impulse). Kürze NICHTS ab."},
+                        ]
+                    }
+                ],
+                config=types.GenerateContentConfig(
+                    system_instruction=BRIEFING_SYSTEM_PROMPT,
+                    temperature=TEMPERATURE,
+                    max_output_tokens=MAX_OUTPUT_TOKENS * 2,
+                ),
+            )
+            briefing_text2 = response2.text
+            print(f"  Retry-Briefing erhalten: {len(briefing_text2)} Zeichen")
+
+            # Use the longer version
+            if len(briefing_text2) > len(briefing_text):
+                briefing_text = briefing_text2
+                print(f"  Verwende Retry-Version ({len(briefing_text)} Zeichen)")
+
+        # Final validation: check all required sections are present
+        required_sections = ["Executive Summary", "Deep-Dive", "Zum Drüber Nachdenken"]
+        missing = [s for s in required_sections if s not in briefing_text and "Geringe KI-Relevanz" not in briefing_text]
+        if missing:
+            print(f"  WARNUNG: Fehlende Abschnitte: {missing}")
+
         return briefing_text
     except Exception as e:
         print(f"  FEHLER bei Gemini-Analyse: {e}")
