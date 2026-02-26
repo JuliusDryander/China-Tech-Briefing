@@ -24,9 +24,20 @@ from datetime import datetime, timedelta
 SOURCES = {
     "硅谷101": {
         "rss": "https://feeds.fireside.fm/sv101/rss",
+        "apple_id": None,
+        "language": "mandarin",
         "min_duration_minutes": 20,
         "exclude_title_patterns": [],
-    }
+        "description": "Chinesischsprachiger Deep-Tech-Podcast von 泓君 (Jane Liu) aus dem Silicon Valley. Chinesische Insider-Perspektive.",
+    },
+    "ChinaTalk": {
+        "rss": None,  # Wird über iTunes Lookup ermittelt
+        "apple_id": "1289062927",
+        "language": "english",
+        "min_duration_minutes": 20,
+        "exclude_title_patterns": [],
+        "description": "Englischsprachiger China-Tech-Podcast von Jordan Schneider. Westliche Analyse mit Policymaker- und Analysten-Gästen.",
+    },
 }
 
 PROCESSED_FILE = "processed.json"
@@ -48,9 +59,11 @@ Du hörst eine chinesischsprachige Podcast-Episode und erstellst daraus ein DEUT
 Die Zielgruppe sind europäische Führungskräfte und Entscheider, die verstehen wollen, was in Chinas KI- und Tech-Ökosystem passiert – und was das für Europa bedeutet.
 
 ## QUELLE
-硅谷101 (Silicon Valley 101) – chinesischsprachiger Deep-Tech-Podcast von Journalistin 泓君 (Jane Liu), basiert im Silicon Valley.
-Einzigartiger Blickwinkel: chinesische Tech-Insider (Gründer, Investoren, Ingenieure) sprechen offen über DeepSeek, Agents, KI-Infra, Chip-Restriktionen, US-China-Dynamik.
-Das ist die chinesische Innenperspektive, die westliche Medien nicht liefern.
+Dieses Briefing basiert auf einer von zwei China-Tech-Quellen:
+
+1. **硅谷101** (Silicon Valley 101) – chinesischsprachiger Deep-Tech-Podcast von Journalistin 泓君 (Jane Liu), basiert im Silicon Valley. Chinesische Tech-Insider sprechen offen über DeepSeek, Agents, KI-Infra, Chip-Restriktionen. Das ist die chinesische Innenperspektive, die westliche Medien nicht liefern.
+
+2. **ChinaTalk** – englischsprachiger China-Tech-Podcast von Jordan Schneider. Gäste sind Policymaker, Analysten, Akademiker. Westliche Analyse der chinesischen KI-Landschaft mit Fokus auf Geopolitik, Exportkontrollen, und strategische Implikationen.
 
 ## KRITISCHE REGELN
 
@@ -122,16 +135,18 @@ Die Frage dahinter: [1 Satz]
 - [ ] Habe ich NUR Informationen aus dem Audio verwendet?
 """
 
-BRIEFING_USER_PROMPT = """Analysiere diese chinesischsprachige Podcast-Episode und erstelle ein deutsches Executive Briefing für europäische Entscheider.
+BRIEFING_USER_PROMPT = """Analysiere diese Podcast-Episode und erstelle ein deutsches Executive Briefing für europäische Entscheider.
 
-Podcast: 硅谷101 (Silicon Valley 101)
-Host: 泓君 (Jane Liu), Journalistin, basiert im Silicon Valley
+Podcast: {source_name}
+Beschreibung: {source_description}
+Sprache: {source_language}
 Episoden-Titel: {episode_title}
 
 WICHTIG:
-- Falls die Episode KEIN KI/Tech-Thema behandelt (z.B. Krypto, Lifestyle), erstelle trotzdem ein kurzes Briefing, aber markiere am Anfang: "⚠️ Geringe KI-Relevanz – Episode behandelt primär [Thema]"
+- Falls die Episode KEIN KI/Tech-Thema behandelt (z.B. Krypto, Lifestyle, Militärgeschichte), erstelle trotzdem ein kurzes Briefing, aber markiere am Anfang: "⚠️ Geringe KI-Relevanz – Episode behandelt primär [Thema]"
 - Falls KI-relevant: Volle Analyse gemäß System-Prompt
 - Die "Einordnung für Europa"-Abschnitte sind PFLICHT und müssen konkret sein (nicht "das betrifft auch Europa")
+- Schreibe in der Executive Summary Tabelle als Quelle: {source_name}
 
 Erstelle das Briefing jetzt."""
 
@@ -150,6 +165,24 @@ def load_processed():
 def save_processed(data):
     with open(PROCESSED_FILE, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def get_rss_url_from_apple_id(apple_id):
+    """Resolve RSS feed URL from Apple Podcasts ID."""
+    lookup_url = f"https://itunes.apple.com/lookup?id={apple_id}&entity=podcast"
+    print(f"  Ermittle RSS Feed für Apple ID {apple_id}...")
+    try:
+        req = urllib.request.Request(lookup_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        if data.get("resultCount", 0) > 0:
+            feed_url = data["results"][0].get("feedUrl")
+            if feed_url:
+                print(f"  RSS Feed gefunden: {feed_url}")
+                return feed_url
+    except Exception as e:
+        print(f"  WARNUNG: iTunes Lookup fehlgeschlagen: {e}")
+    return None
 
 
 def get_latest_rss_episode(rss_url, source_name, config):
@@ -269,7 +302,7 @@ def download_audio(url, max_size_mb=300):
         return None
 
 
-def briefing_from_audio(audio_path, episode_title):
+def briefing_from_audio(audio_path, episode_title, source_name, source_config):
     """Send audio to Gemini and get German briefing directly."""
     try:
         from google import genai
@@ -308,7 +341,12 @@ def briefing_from_audio(audio_path, episode_title):
         return None
 
     # Generate briefing
-    user_prompt = BRIEFING_USER_PROMPT.format(episode_title=episode_title)
+    user_prompt = BRIEFING_USER_PROMPT.format(
+        episode_title=episode_title,
+        source_name=source_name,
+        source_description=source_config.get("description", ""),
+        source_language=source_config.get("language", "unknown"),
+    )
 
     print(f"  Sende an Gemini ({GEMINI_MODEL}) zur Analyse...")
     try:
@@ -357,7 +395,15 @@ def main():
     for source_name, config in SOURCES.items():
         print(f"\n--- {source_name} ---")
 
-        rss_url = config["rss"]
+        rss_url = config.get("rss")
+        if not rss_url:
+            # Try iTunes lookup
+            apple_id = config.get("apple_id")
+            if apple_id:
+                rss_url = get_rss_url_from_apple_id(apple_id)
+            if not rss_url:
+                print(f"  FEHLER: Kein RSS Feed für {source_name}")
+                continue
 
         # Get latest episode
         episode = get_latest_rss_episode(rss_url, source_name, config)
@@ -376,16 +422,26 @@ def main():
             continue
 
         try:
-            briefing = briefing_from_audio(audio_path, episode["title"])
+            briefing = briefing_from_audio(audio_path, episode["title"], source_name, config)
             if briefing:
-                briefing_parts.append(briefing)
-                processed[dedup_key] = {
-                    "title": episode["title"],
-                    "date": episode["pub_date"],
-                    "processed_at": datetime.now().isoformat(),
-                    "method": "gemini_audio_to_briefing",
-                }
-                print(f"  ✅ Briefing erstellt für: {episode['title'][:60]}")
+                # Relevanz-Check: Überspringen wenn Gemini "Geringe KI-Relevanz" markiert
+                if "Geringe KI-Relevanz" in briefing:
+                    print(f"  ⏭️  Geringe KI-Relevanz – Episode wird übersprungen")
+                    processed[dedup_key] = {
+                        "title": episode["title"],
+                        "date": episode["pub_date"],
+                        "processed_at": datetime.now().isoformat(),
+                        "method": "skipped_low_relevance",
+                    }
+                else:
+                    briefing_parts.append(briefing)
+                    processed[dedup_key] = {
+                        "title": episode["title"],
+                        "date": episode["pub_date"],
+                        "processed_at": datetime.now().isoformat(),
+                        "method": "gemini_audio_to_briefing",
+                    }
+                    print(f"  ✅ Briefing erstellt für: {episode['title'][:60]}")
             else:
                 print(f"  ❌ Briefing-Erstellung fehlgeschlagen")
         finally:
