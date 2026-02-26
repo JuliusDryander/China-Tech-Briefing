@@ -315,15 +315,12 @@ def briefing_from_audio(audio_path, episode_title):
         response = client.models.generate_content(
             model=GEMINI_MODEL,
             contents=[
-                types.Content(
-                    parts=[
-                        types.Part.from_uri(
-                            file_uri=uploaded.uri,
-                            mime_type=uploaded.mime_type,
-                        ),
-                        types.Part.from_text(user_prompt),
+                {
+                    "parts": [
+                        {"file_data": {"file_uri": uploaded.uri, "mime_type": uploaded.mime_type}},
+                        {"text": user_prompt},
                     ]
-                )
+                }
             ],
             config=types.GenerateContentConfig(
                 system_instruction=BRIEFING_SYSTEM_PROMPT,
