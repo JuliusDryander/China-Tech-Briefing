@@ -1,1 +1,14 @@
-{}
+{
+  "硅谷101_7abda28b-99c6-4ebc-8c0d-37bcc77f6a73": {
+    "title": "E226｜聊聊DeepMind创始人哈萨比斯：一个科学家与失控的AI竞赛",
+    "date": "Wed, 25 Feb 2026 16:00:00 -0800",
+    "processed_at": "2026-02-26T15:37:40.665660",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_b786733a-aa64-11ef-bc3a-9fd2458b8796": {
+    "title": "Lawrence Freedman on Strategy and Nuclear War",
+    "date": "Wed, 25 Feb 2026 19:30:00 -0000",
+    "processed_at": "2026-02-26T15:38:33.564310",
+    "method": "skipped_low_relevance"
+  }
+}
