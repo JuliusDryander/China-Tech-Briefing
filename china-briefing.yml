@@ -2,9 +2,8 @@ name: China KI-Briefing
 
 on:
   schedule:
-    # Jeden Montag und Donnerstag um 7:00 UTC (8:00 CET / 9:00 CEST)
-    # 42章经 erscheint ca. alle 2 Wochen – wir prüfen 2x/Woche
-    - cron: '0 7 * * 1,4'
+    # Mo, Mi, Fr um 7:00 UTC (8:00 CET / 9:00 CEST)
+    - cron: '0 7 * * 1,3,5'
   workflow_dispatch:  # Manueller Trigger
 
 env:
@@ -51,3 +50,11 @@ jobs:
           git add briefing.md briefing_email.html processed.json
           git diff --staged --quiet || git commit -m "China KI-Briefing $(date +%Y-%m-%d)"
           git push
+
+      - name: Trigger Make.com Webhook
+        if: steps.check.outputs.has_briefing == 'true'
+        run: |
+          curl -s -X POST "${{ secrets.MAKE_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{"source": "china-briefing", "date": "'$(date +%Y-%m-%d)'"}'
+          echo "Make.com Webhook getriggert"
