@@ -307,6 +307,8 @@ def build_email_html(sections):
     <table cellpadding="0" cellspacing="0" border="0"><tr>
       <td style="padding:4px 12px;background-color:rgba(201,169,110,0.15);border-radius:2px;">
         <span style="font-family:{SANS};font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:{GOLD};">硅谷101</span>
+        <span style="font-family:{SANS};font-size:10px;color:#555;margin:0 6px;">&middot;</span>
+        <span style="font-family:{SANS};font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:{GOLD};">ChinaTalk</span>
       </td>
     </tr></table>
   </td></tr>
@@ -485,7 +487,7 @@ def build_email_html(sections):
 </td></tr>
 <tr><td style="padding:20px 40px 24px 40px;background-color:{GRAY_BG};">
   <p style="margin:0 0 8px 0;font-family:{SANS};font-size:11px;color:{TEXT_MUTED};line-height:1.6;">
-    <strong style="color:{TEXT_LIGHT};">Quellen-Hinweis:</strong> Dieses Briefing basiert auf 硅谷101 (Silicon Valley 101) &ndash; chinesischsprachiger Deep-Tech-Podcast von Journalistin 泓君 (Jane Liu). Originalsprache: Mandarin. KI-&uuml;bersetzt und analysiert f&uuml;r europ&auml;ische Entscheider.
+    <strong style="color:{TEXT_LIGHT};">Quellen-Hinweis:</strong> Dieses Briefing basiert auf 硅谷101 (chinesischsprachiger Deep-Tech-Podcast, Host: 泓君/Jane Liu) und ChinaTalk (englischsprachiger China-Tech-Podcast, Host: Jordan Schneider). KI-analysiert und f&uuml;r europ&auml;ische Entscheider aufbereitet.
   </p>
   <table width="100%" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #e8e6e1;padding-top:12px;">
     <p style="margin:0;font-family:{SANS};font-size:11px;color:{TEXT_FAINT};">
