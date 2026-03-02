@@ -10,5 +10,11 @@
     "date": "Wed, 25 Feb 2026 19:30:00 -0000",
     "processed_at": "2026-02-26T15:38:33.564310",
     "method": "skipped_low_relevance"
+  },
+  "ChinaTalk_3412d66c-1401-11f1-9bfa-5f50f9a54148": {
+    "title": "Second Breakfast: Anthropic, SecDefs being weird",
+    "date": "Fri, 27 Feb 2026 17:24:00 -0000",
+    "processed_at": "2026-03-02T07:45:16.929088",
+    "method": "gemini_audio_to_briefing"
   }
 }
