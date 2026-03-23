@@ -52,5 +52,17 @@
     "date": "Mon, 16 Mar 2026 08:45:00 -0000",
     "processed_at": "2026-03-19T07:45:16.987036",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_c457ca43-1305-44a3-b9cc-c68480802396": {
+    "title": "E229｜从手工作坊到全球第一：中国动力电池逆袭史",
+    "date": "Thu, 19 Mar 2026 17:00:00 -0700",
+    "processed_at": "2026-03-23T07:58:00.027352",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_22f2ba76-249d-11f1-a7c4-b728f44c0f0e": {
+    "title": "Second Breakfast: Taking Kharg Island, Terrorism, Grift",
+    "date": "Fri, 20 Mar 2026 20:41:00 -0000",
+    "processed_at": "2026-03-23T07:59:20.454815",
+    "method": "skipped_low_relevance"
   }
 }
