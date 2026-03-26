@@ -64,5 +64,17 @@
     "date": "Fri, 20 Mar 2026 20:41:00 -0000",
     "processed_at": "2026-03-23T07:59:20.454815",
     "method": "skipped_low_relevance"
+  },
+  "硅谷101_d97446f1-d6e3-4894-89d1-dca0a362b10b": {
+    "title": "E230｜1万亿收入预期背后：英伟达的巅峰与软肋",
+    "date": "Wed, 25 Mar 2026 17:00:00 -0700",
+    "processed_at": "2026-03-26T07:58:37.778762",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_bef923ec-287b-11f1-aee8-3fc652ac5d0b": {
+    "title": "Second Breakfast: We Negotiate with Bombs, War by Brainrot",
+    "date": "Wed, 25 Mar 2026 18:52:00 -0000",
+    "processed_at": "2026-03-26T07:59:23.628381",
+    "method": "gemini_audio_to_briefing"
   }
 }
