@@ -82,5 +82,17 @@
     "date": "Fri, 27 Mar 2026 09:25:00 -0000",
     "processed_at": "2026-03-30T08:18:56.580273",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_0f4a2ab9-d3a0-41ad-8db1-6c03c851bd70": {
+    "title": "E231｜从B2B到A2A：Agent新基建，如何让“一人企业”做全球生意？",
+    "date": "Tue, 31 Mar 2026 17:00:00 -0700",
+    "processed_at": "2026-04-06T08:19:56.303898",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_2b19f22a-2f86-11f1-b07a-371200c55767": {
+    "title": "Second Breakfast: F-15, Pete's Purges, CENTCOM Hubris, War of 1812",
+    "date": "Fri, 03 Apr 2026 17:54:00 -0000",
+    "processed_at": "2026-04-06T08:22:19.376340",
+    "method": "gemini_audio_to_briefing"
   }
 }
