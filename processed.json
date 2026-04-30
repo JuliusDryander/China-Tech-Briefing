@@ -94,5 +94,11 @@
     "date": "Fri, 03 Apr 2026 17:54:00 -0000",
     "processed_at": "2026-04-06T08:22:19.376340",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_2f95a8c4-4243-11f1-9d80-3fda9e6c83b1": {
+    "title": "Quantum 201: US v China Quantum Industrial Base",
+    "date": "Mon, 27 Apr 2026 14:12:00 -0000",
+    "processed_at": "2026-04-30T09:09:47.257653",
+    "method": "gemini_audio_to_briefing"
   }
 }
