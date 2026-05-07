@@ -100,5 +100,17 @@
     "date": "Mon, 27 Apr 2026 14:12:00 -0000",
     "processed_at": "2026-04-30T09:09:47.257653",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_b2be7093-3366-4ee2-8a7a-625f06206ae5": {
+    "title": "E234｜未来实拍电影还存在吗？与导演陆川聊聊AI给影视人的恐惧与自由",
+    "date": "Tue, 21 Apr 2026 23:00:00 -0700",
+    "processed_at": "2026-05-07T09:27:27.432941",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_0b0d8ea8-031f-11f1-8796-ebcf6f384616": {
+    "title": "Ken Liu on AI, Daoism, and Freedom",
+    "date": "Wed, 06 May 2026 12:51:00 -0000",
+    "processed_at": "2026-05-07T09:28:52.195091",
+    "method": "gemini_audio_to_briefing"
   }
 }
