@@ -112,5 +112,17 @@
     "date": "Wed, 06 May 2026 12:51:00 -0000",
     "processed_at": "2026-05-07T09:28:52.195091",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_90f96f60-25be-45ac-b832-56776a23d534": {
+    "title": "E235｜20年内CAR-T治愈癌症？与刘诚博士聊聊癌症治疗的底层哲学",
+    "date": "Fri, 08 May 2026 17:00:00 -0700",
+    "processed_at": "2026-05-14T09:29:46.359399",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_c0fa0fda-4db5-11f1-9f8a-1ff347bd9355": {
+    "title": "The Stalemate Summit: Xi-Trump in the Long Sweep of US-China Relations",
+    "date": "Tue, 12 May 2026 11:53:00 -0000",
+    "processed_at": "2026-05-14T09:31:08.929371",
+    "method": "gemini_audio_to_briefing"
   }
 }
