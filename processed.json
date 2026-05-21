@@ -130,5 +130,17 @@
     "date": "Thu, 14 May 2026 17:00:00 -0700",
     "processed_at": "2026-05-18T11:02:39.360757",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_c3607c08-6eb6-48bd-8250-b41b5b8272e6": {
+    "title": "E237｜央视和FIFA谈判纷争背后，体育赛事转播权的博弈与生意",
+    "date": "Wed, 20 May 2026 17:00:00 -0700",
+    "processed_at": "2026-05-21T10:38:07.954552",
+    "method": "skipped_low_relevance"
+  },
+  "ChinaTalk_08dda9cc-52e5-11f1-a213-dbc4a9fc28cd": {
+    "title": "Trump's China Visit: Prestige on the Cheap",
+    "date": "Mon, 18 May 2026 18:11:00 -0000",
+    "processed_at": "2026-05-21T10:39:43.940725",
+    "method": "gemini_audio_to_briefing"
   }
 }
