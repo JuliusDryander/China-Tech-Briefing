@@ -142,5 +142,17 @@
     "date": "Mon, 18 May 2026 18:11:00 -0000",
     "processed_at": "2026-05-21T10:39:43.940725",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_51260de8-60ef-4b76-b3e5-2e559c4a0923": {
+    "title": "E238｜聊聊Harness时代AI-First的组织架构：从信任人到信任AI",
+    "date": "Sun, 24 May 2026 17:00:00 -0700",
+    "processed_at": "2026-05-25T11:05:56.254293",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_6e23e664-4275-11f1-8d4f-fffd9156e682": {
+    "title": "Doing Big Things in Policy: It's All White Space",
+    "date": "Fri, 22 May 2026 12:40:00 -0000",
+    "processed_at": "2026-05-25T11:06:42.957240",
+    "method": "gemini_audio_to_briefing"
   }
 }
