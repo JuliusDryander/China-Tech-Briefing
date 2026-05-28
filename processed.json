@@ -154,5 +154,11 @@
     "date": "Fri, 22 May 2026 12:40:00 -0000",
     "processed_at": "2026-05-25T11:06:42.957240",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_ef0fb53c-56a7-11f1-823b-6b194b39cee8": {
+    "title": "WarTalk: Ukraine's Forward Drone Line with Rob Lee",
+    "date": "Tue, 26 May 2026 00:18:00 -0000",
+    "processed_at": "2026-05-28T10:46:11.360387",
+    "method": "gemini_audio_to_briefing"
   }
 }
