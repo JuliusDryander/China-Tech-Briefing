@@ -160,5 +160,11 @@
     "date": "Tue, 26 May 2026 00:18:00 -0000",
     "processed_at": "2026-05-28T10:46:11.360387",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_6d5dc5c0-5aca-11f1-af46-bfad3e53a8c9": {
+    "title": "WarTalk: NatSec in Congress + AI Evals for War",
+    "date": "Fri, 29 May 2026 08:47:00 -0000",
+    "processed_at": "2026-06-01T12:30:57.452390",
+    "method": "gemini_audio_to_briefing"
   }
 }
