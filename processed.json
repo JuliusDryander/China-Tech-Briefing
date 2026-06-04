@@ -166,5 +166,11 @@
     "date": "Fri, 29 May 2026 08:47:00 -0000",
     "processed_at": "2026-06-01T12:30:57.452390",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_a270cf0c-5dd4-11f1-9fef-b36b10185145": {
+    "title": "The Pope has AI Takes",
+    "date": "Mon, 01 Jun 2026 16:12:00 -0000",
+    "processed_at": "2026-06-04T10:34:16.353926",
+    "method": "gemini_audio_to_briefing"
   }
 }
