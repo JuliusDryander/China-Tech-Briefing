@@ -172,5 +172,11 @@
     "date": "Mon, 01 Jun 2026 16:12:00 -0000",
     "processed_at": "2026-06-04T10:34:16.353926",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_f43fd2b0-5fa0-11f1-b3e6-6bf3be2fe7cc": {
+    "title": "WarTalk: The View from AFRICOM with LTG Brennan",
+    "date": "Fri, 05 Jun 2026 08:18:00 -0000",
+    "processed_at": "2026-06-08T11:50:22.872723",
+    "method": "gemini_audio_to_briefing"
   }
 }
