@@ -178,5 +178,17 @@
     "date": "Fri, 05 Jun 2026 08:18:00 -0000",
     "processed_at": "2026-06-08T11:50:22.872723",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_259291f5-2715-4dde-bcfe-b5beb4df5793": {
+    "title": "E239｜SpaceX要让太空算力从科幻走向现实，但它划算吗？",
+    "date": "Fri, 12 Jun 2026 04:00:00 -0700",
+    "processed_at": "2026-06-15T13:04:32.189180",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_d36e592c-6666-11f1-913b-5796b37b6780": {
+    "title": "ModelTalk: Claude Fable (Nathan's pissed), is AI actually productive, advice for graduates",
+    "date": "Fri, 12 Jun 2026 17:03:00 -0000",
+    "processed_at": "2026-06-15T13:05:18.409704",
+    "method": "gemini_audio_to_briefing"
   }
 }
