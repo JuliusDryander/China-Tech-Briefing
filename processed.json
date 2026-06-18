@@ -190,5 +190,17 @@
     "date": "Fri, 12 Jun 2026 17:03:00 -0000",
     "processed_at": "2026-06-15T13:05:18.409704",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_47b7778e-1ed6-4dab-b7c9-8b4a6555b867": {
+    "title": "E240｜OpenAI联手PE砸下40亿美元，聊聊硅谷最火新职位FDE",
+    "date": "Wed, 17 Jun 2026 17:00:00 -0700",
+    "processed_at": "2026-06-18T11:05:29.601283",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_950d3c9c-69f0-11f1-a5b8-6f114027a9a9": {
+    "title": "AI for Science!",
+    "date": "Wed, 17 Jun 2026 09:57:00 -0000",
+    "processed_at": "2026-06-18T11:06:12.481488",
+    "method": "gemini_audio_to_briefing"
   }
 }
