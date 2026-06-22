@@ -202,5 +202,11 @@
     "date": "Wed, 17 Jun 2026 09:57:00 -0000",
     "processed_at": "2026-06-18T11:06:12.481488",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_cf89f0d0-6dd9-11f1-a86c-5b336e9c2073": {
+    "title": "Rare Earths: What is To Be Done?",
+    "date": "Mon, 22 Jun 2026 09:41:00 -0000",
+    "processed_at": "2026-06-22T12:44:18.211156",
+    "method": "gemini_audio_to_briefing"
   }
 }
