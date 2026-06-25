@@ -208,5 +208,11 @@
     "date": "Mon, 22 Jun 2026 09:41:00 -0000",
     "processed_at": "2026-06-22T12:44:18.211156",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_fdcd6da6-6e55-11f1-8b21-73f5c195b00c": {
+    "title": "Economic Security Megapod!",
+    "date": "Wed, 24 Jun 2026 07:20:00 -0000",
+    "processed_at": "2026-06-25T10:12:17.102219",
+    "method": "gemini_audio_to_briefing"
   }
 }
