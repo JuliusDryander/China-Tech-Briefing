@@ -214,5 +214,17 @@
     "date": "Wed, 24 Jun 2026 07:20:00 -0000",
     "processed_at": "2026-06-25T10:12:17.102219",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_c38d5df5-2eb3-46d3-8437-892593599d29": {
+    "title": "E241｜跑鞋技术迭代史：马拉松跑进2小时，靠人还是靠鞋？",
+    "date": "Thu, 25 Jun 2026 17:00:00 -0700",
+    "processed_at": "2026-07-02T09:55:42.131437",
+    "method": "skipped_low_relevance"
+  },
+  "ChinaTalk_ea2b2a28-6bfc-11f1-861d-dbb1c081b969": {
+    "title": "Taiwan's War on Renewables [Fully Produced Radio Show!]",
+    "date": "Tue, 30 Jun 2026 20:04:00 -0000",
+    "processed_at": "2026-07-02T09:59:33.339890",
+    "method": "gemini_audio_to_briefing"
   }
 }
