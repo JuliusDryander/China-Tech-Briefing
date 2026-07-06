@@ -226,5 +226,17 @@
     "date": "Tue, 30 Jun 2026 20:04:00 -0000",
     "processed_at": "2026-07-02T09:59:33.339890",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_308f9278-dd48-44d3-a4ce-ee436968fc28": {
+    "title": "E242｜最快半年AI跑通自进化？与陈天桥首席科学家聊聊硅谷模型必争之地",
+    "date": "Sun, 05 Jul 2026 17:00:00 -0700",
+    "processed_at": "2026-07-06T11:25:44.300047",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_d867d354-76e2-11f1-84e8-ff42fe6fab7b": {
+    "title": "Unitree and the Humanoid Robot Revolution",
+    "date": "Sat, 04 Jul 2026 02:43:00 -0000",
+    "processed_at": "2026-07-06T11:26:21.474682",
+    "method": "gemini_audio_to_briefing"
   }
 }
