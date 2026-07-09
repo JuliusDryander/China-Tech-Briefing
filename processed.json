@@ -238,5 +238,11 @@
     "date": "Sat, 04 Jul 2026 02:43:00 -0000",
     "processed_at": "2026-07-06T11:26:21.474682",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_1d74cb0e-7a18-11f1-b816-cfaf6eee8cc5": {
+    "title": "The Chemicals Powering the Chip Industry",
+    "date": "Tue, 07 Jul 2026 15:25:00 -0000",
+    "processed_at": "2026-07-09T10:19:44.639719",
+    "method": "gemini_audio_to_briefing"
   }
 }
