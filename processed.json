@@ -244,5 +244,17 @@
     "date": "Tue, 07 Jul 2026 15:25:00 -0000",
     "processed_at": "2026-07-09T10:19:44.639719",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_d65f1b49-9e97-4892-bc64-55f5f0b39906": {
+    "title": "E243｜特朗普“缓刑”红牌之外，美国资本如何硬控全球足坛",
+    "date": "Thu, 09 Jul 2026 17:00:00 -0700",
+    "processed_at": "2026-07-13T10:17:05.393383",
+    "method": "skipped_low_relevance"
+  },
+  "ChinaTalk_60db6ad8-7c7f-11f1-9175-7f0c55935d35": {
+    "title": "WarTalk: Iran + Randy Schriver on Asian Defense",
+    "date": "Fri, 10 Jul 2026 16:49:00 -0000",
+    "processed_at": "2026-07-13T10:18:28.957539",
+    "method": "gemini_audio_to_briefing"
   }
 }
