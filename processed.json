@@ -268,5 +268,11 @@
     "date": "Wed, 15 Jul 2026 17:43:00 -0000",
     "processed_at": "2026-07-16T09:12:30.833204",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_b7fc46a8-85fc-11f1-93fb-87bf05fbd91c": {
+    "title": "Kimi K3, Xi's Speech, and China's Mythos Moment",
+    "date": "Wed, 22 Jul 2026 18:39:00 -0000",
+    "processed_at": "2026-07-23T09:20:22.201332",
+    "method": "gemini_audio_to_briefing"
   }
 }
