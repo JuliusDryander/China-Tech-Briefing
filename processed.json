@@ -274,5 +274,17 @@
     "date": "Wed, 22 Jul 2026 18:39:00 -0000",
     "processed_at": "2026-07-23T09:20:22.201332",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_5aeaeb64-9165-4271-9884-23329b511e11": {
+    "title": "E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的",
+    "date": "Thu, 23 Jul 2026 17:00:00 -0700",
+    "processed_at": "2026-07-27T10:34:19.086945",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_64c72df8-86f7-11f1-ae50-dfb0b198eafc": {
+    "title": "The Iran War Oil Shock That Wasn’t...(Yet?)",
+    "date": "Sun, 26 Jul 2026 04:00:00 -0000",
+    "processed_at": "2026-07-27T10:34:53.118693",
+    "method": "skipped_low_relevance"
   }
 }
