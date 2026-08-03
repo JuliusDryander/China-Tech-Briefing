@@ -286,5 +286,17 @@
     "date": "Sun, 26 Jul 2026 04:00:00 -0000",
     "processed_at": "2026-07-27T10:34:53.118693",
     "method": "skipped_low_relevance"
+  },
+  "硅谷101_5fd236d7-9a72-4b15-9e84-e83ceadd1b41": {
+    "title": "E246｜何谓蒸馏？聊聊硅谷如何看中国开放模型逼近前沿",
+    "date": "Fri, 31 Jul 2026 17:00:00 -0700",
+    "processed_at": "2026-08-03T10:35:41.827092",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_618c3788-8da9-11f1-af6c-d70cf8df26ec": {
+    "title": "Jordan talks AI with Sebastian Mallaby on his show 'The Spillover'",
+    "date": "Sat, 01 Aug 2026 13:06:00 -0000",
+    "processed_at": "2026-08-03T10:38:21.286597",
+    "method": "gemini_audio_to_briefing"
   }
 }
