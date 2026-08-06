@@ -298,5 +298,17 @@
     "date": "Sat, 01 Aug 2026 13:06:00 -0000",
     "processed_at": "2026-08-03T10:38:21.286597",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_6c9d13b1-ac9a-4a7a-a35b-99bfb8374668": {
+    "title": "E247｜对话盛颖：xAI，Infra的浪漫，SGLang，开源，平权与“甄嬛传”",
+    "date": "Tue, 04 Aug 2026 21:30:00 -0700",
+    "processed_at": "2026-08-06T09:36:37.351615",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_0075bb86-90ec-11f1-98a2-5f2416bbaf4b": {
+    "title": "The FCC's New Robot Rules",
+    "date": "Thu, 06 Aug 2026 00:08:00 -0000",
+    "processed_at": "2026-08-06T09:37:40.264208",
+    "method": "gemini_audio_to_briefing"
   }
 }
