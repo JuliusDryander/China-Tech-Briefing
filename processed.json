@@ -310,5 +310,11 @@
     "date": "Thu, 06 Aug 2026 00:08:00 -0000",
     "processed_at": "2026-08-06T09:37:40.264208",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_3a7deedc-91d9-11f1-b6ab-ef45c86af5a8": {
+    "title": "WarTalk: Out of Ammo for Real + Are CCAs Dumb?",
+    "date": "Fri, 07 Aug 2026 11:21:00 -0000",
+    "processed_at": "2026-08-10T08:22:45.115990",
+    "method": "gemini_audio_to_briefing"
   }
 }
