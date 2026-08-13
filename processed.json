@@ -316,5 +316,17 @@
     "date": "Fri, 07 Aug 2026 11:21:00 -0000",
     "processed_at": "2026-08-10T08:22:45.115990",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_9e923c4c-1c87-499b-90a4-9a21cc83e4b1": {
+    "title": "E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE",
+    "date": "Mon, 10 Aug 2026 18:45:00 -0700",
+    "processed_at": "2026-08-13T08:13:22.290767",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_a41bb726-7ad1-11f1-952d-f306c09c6fe7": {
+    "title": "$75k Contest Launch! ChinaTalk Hiring + Evals for the Situation Room",
+    "date": "Mon, 10 Aug 2026 08:57:00 -0000",
+    "processed_at": "2026-08-13T08:14:45.134242",
+    "method": "gemini_audio_to_briefing"
   }
 }
