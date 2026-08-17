@@ -328,5 +328,11 @@
     "date": "Mon, 10 Aug 2026 08:57:00 -0000",
     "processed_at": "2026-08-13T08:14:45.134242",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_d33ffece-99d8-11f1-8cc6-f328fc037173": {
+    "title": "The Rise of China’s Electric Vehicle Industry",
+    "date": "Mon, 17 Aug 2026 01:13:00 -0000",
+    "processed_at": "2026-08-17T07:44:59.942530",
+    "method": "gemini_audio_to_briefing"
   }
 }
