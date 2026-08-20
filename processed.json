@@ -334,5 +334,17 @@
     "date": "Mon, 17 Aug 2026 01:13:00 -0000",
     "processed_at": "2026-08-17T07:44:59.942530",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_6242033d-a14a-44e3-a622-cbfc7d3c3817": {
+    "title": "E249｜Token经济转点：OpenClaw、Hermes到本地自研的Agent进化之路",
+    "date": "Wed, 19 Aug 2026 17:00:00 -0700",
+    "processed_at": "2026-08-20T07:35:19.198106",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_b31ad282-9121-11f1-ba9e-b3285154d1a5": {
+    "title": "North Korea's Messiah",
+    "date": "Wed, 19 Aug 2026 07:58:00 -0000",
+    "processed_at": "2026-08-20T07:36:34.329101",
+    "method": "skipped_low_relevance"
   }
 }
