@@ -352,5 +352,17 @@
     "date": "Mon, 24 Aug 2026 07:58:00 -0000",
     "processed_at": "2026-08-27T18:01:06.413899",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_73a69583-98ee-43d6-a892-3e7c93012dd9": {
+    "title": "E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破",
+    "date": "Thu, 27 Aug 2026 17:45:00 -0700",
+    "processed_at": "2026-08-31T14:40:34.327384",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_257da0ba-a334-11f1-8c3b-0feea6ade97e": {
+    "title": "WarTalk: USN Readiness Reckoning, Steampunk Navy, and AI Cyberwar with Shashank of the Economist",
+    "date": "Sat, 29 Aug 2026 20:00:00 -0000",
+    "processed_at": "2026-08-31T14:42:27.632381",
+    "method": "gemini_audio_to_briefing"
   }
 }
