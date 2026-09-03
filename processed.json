@@ -364,5 +364,11 @@
     "date": "Sat, 29 Aug 2026 20:00:00 -0000",
     "processed_at": "2026-08-31T14:42:27.632381",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_09b76e72-a62e-11f1-a671-0f4dce3c28e5": {
+    "title": "Cyber Apocalypse, Now? Hugging Face and the Future of Cyber Risk",
+    "date": "Wed, 02 Sep 2026 09:12:00 -0000",
+    "processed_at": "2026-09-03T11:51:54.708572",
+    "method": "gemini_audio_to_briefing"
   }
 }
