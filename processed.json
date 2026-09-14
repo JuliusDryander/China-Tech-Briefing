@@ -370,5 +370,11 @@
     "date": "Wed, 02 Sep 2026 09:12:00 -0000",
     "processed_at": "2026-09-03T11:51:54.708572",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_c893ce82-ae1a-11f1-9824-f30bf10a08a5": {
+    "title": "WarTalk: 9.11, Death of the Army,  So Long Dan Driscoll",
+    "date": "Fri, 11 Sep 2026 20:02:00 -0000",
+    "processed_at": "2026-09-14T13:31:41.904143",
+    "method": "gemini_audio_to_briefing"
   }
 }
