@@ -376,5 +376,17 @@
     "date": "Fri, 11 Sep 2026 20:02:00 -0000",
     "processed_at": "2026-09-14T13:31:41.904143",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_786d63c4-d46c-4ff3-80f8-fc895b2a57f0": {
+    "title": "E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学",
+    "date": "Tue, 15 Sep 2026 17:00:00 -0700",
+    "processed_at": "2026-09-17T12:21:55.965586",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_fa751d5e-b0ac-11f1-9359-1fdd594078a2": {
+    "title": "ModelTalk: Pacing the Frontier",
+    "date": "Tue, 15 Sep 2026 02:27:00 -0000",
+    "processed_at": "2026-09-17T12:24:06.653551",
+    "method": "gemini_audio_to_briefing"
   }
 }
