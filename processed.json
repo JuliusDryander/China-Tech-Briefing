@@ -400,5 +400,17 @@
     "date": "Sat, 19 Sep 2026 00:15:00 -0000",
     "processed_at": "2026-09-21T13:31:25.974516",
     "method": "skipped_low_relevance"
+  },
+  "硅谷101_833a6b89-e6a1-4d61-a3b3-46f4d664894e": {
+    "title": "E252｜硅谷睡眠外挂：富人的玩具，还是预防医疗的入口？｜对话Eight Sleep创始人",
+    "date": "Wed, 23 Sep 2026 17:00:00 -0700",
+    "processed_at": "2026-09-24T12:26:54.391992",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_a78842bc-b690-11f1-81e3-c3bbd56e23dc": {
+    "title": "Julian Gewirtz on Trump-Xi Summit, AI, and Mao Dead Fifty Years Ago!",
+    "date": "Tue, 22 Sep 2026 20:55:00 -0000",
+    "processed_at": "2026-09-24T12:27:50.223959",
+    "method": "gemini_audio_to_briefing"
   }
 }
