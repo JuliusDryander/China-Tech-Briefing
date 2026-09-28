@@ -412,5 +412,17 @@
     "date": "Tue, 22 Sep 2026 20:55:00 -0000",
     "processed_at": "2026-09-24T12:27:50.223959",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_0a1dd0c4-a1f7-4f7c-b334-bd807ca72a5d": {
+    "title": "E253｜谁在给大模型出题、卖题、判卷？聊聊AI数据行业的野蛮生长",
+    "date": "Sun, 27 Sep 2026 19:30:00 -0700",
+    "processed_at": "2026-09-28T14:44:57.148345",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_dede156e-b908-11f1-8eab-afb6aa5ffde5": {
+    "title": "WarTalk: Potemkin Pacific, Midterm Budget Woes",
+    "date": "Fri, 25 Sep 2026 17:45:00 -0000",
+    "processed_at": "2026-09-28T14:46:15.173464",
+    "method": "gemini_audio_to_briefing"
   }
 }
