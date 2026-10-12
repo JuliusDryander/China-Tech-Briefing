@@ -442,5 +442,17 @@
     "date": "Tue, 06 Oct 2026 09:08:00 -0000",
     "processed_at": "2026-10-08T14:14:45.441550",
     "method": "gemini_audio_to_briefing"
+  },
+  "硅谷101_8fa0b58e-8359-4609-8e84-30c9a632df50": {
+    "title": "E255｜模型越来越强，为什么用户没感觉？再访阿里国际站总裁张阔",
+    "date": "Thu, 08 Oct 2026 16:00:00 -0700",
+    "processed_at": "2026-10-12T16:21:36.452969",
+    "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_0308f04c-c356-11f1-835c-fbffaff6b369": {
+    "title": "AGI Believers: Kevin Roose on the Race",
+    "date": "Thu, 08 Oct 2026 20:48:00 -0000",
+    "processed_at": "2026-10-12T16:22:32.102634",
+    "method": "gemini_audio_to_briefing"
   }
 }
