@@ -454,5 +454,11 @@
     "date": "Thu, 08 Oct 2026 20:48:00 -0000",
     "processed_at": "2026-10-12T16:22:32.102634",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_b0419e1c-c2b6-11f1-8a5a-b7a018cc2e95": {
+    "title": "Matt Yglesias + Jerusalem Demsas + Jordan Crossover Pod",
+    "date": "Mon, 12 Oct 2026 19:35:00 -0000",
+    "processed_at": "2026-10-15T12:19:44.390617",
+    "method": "gemini_audio_to_briefing"
   }
 }
