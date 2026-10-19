@@ -460,5 +460,11 @@
     "date": "Mon, 12 Oct 2026 19:35:00 -0000",
     "processed_at": "2026-10-15T12:19:44.390617",
     "method": "gemini_audio_to_briefing"
+  },
+  "ChinaTalk_aebd96be-c44a-11f1-80a0-ef65a15b8484": {
+    "title": "Drone Dominance | Travis Metz - DIU Acting Director",
+    "date": "Sat, 17 Oct 2026 08:00:00 -0000",
+    "processed_at": "2026-10-19T14:11:37.590457",
+    "method": "gemini_audio_to_briefing"
   }
 }
